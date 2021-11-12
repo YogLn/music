@@ -1,1 +1,0 @@
-export const CHANGE_CURRENT_SONG = 'change-current-song';

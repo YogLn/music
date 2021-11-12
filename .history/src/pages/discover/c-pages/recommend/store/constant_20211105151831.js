@@ -1,1 +1,0 @@
-export const CHANGE_TOP_BANNERS = 'CHANGE_TOP_BANNERS';
