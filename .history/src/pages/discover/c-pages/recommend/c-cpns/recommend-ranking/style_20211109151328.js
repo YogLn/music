@@ -1,0 +1,11 @@
+import styled from 'styled-components'
+
+export const RankingWrapper = styled.div`
+margin-top:10px;
+	.tops {
+		margin: 30px 0;
+		display: flex;
+		background-image: url(${require("@/assets/img/recommend-top-bg.png")});
+		height: 472px;
+	}
+`

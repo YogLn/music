@@ -1,0 +1,1 @@
+export const CHANGE_SONGS_CATEGORY = 'change-songs-category';
