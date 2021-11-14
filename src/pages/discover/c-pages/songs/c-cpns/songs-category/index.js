@@ -17,8 +17,7 @@ export default memo(function SongsCategory(props) {
 		dispatch(changeCurrentCategoryAction(name))
 		dispatch(getSongsListAction(0))
 		setShowCategory(false)
-	}
-	
+	}	
 
   return (
     <CategoryWrapper>

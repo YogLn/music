@@ -9,6 +9,7 @@ import { getTopListAction } from '../../store/actionCreator'
 export default memo(function Ranking() {
   // redux hooks
   const dispatch = useDispatch()
+  
   const { upRanking, newRanking, originRanking } = useSelector(state => ({
     upRanking: state.getIn(['recommend', 'upRanking']),
     newRanking: state.getIn(['recommend', 'newRanking']),
@@ -21,13 +22,14 @@ export default memo(function Ranking() {
     dispatch(getTopListAction(2))
     dispatch(getTopListAction(3))
   }, [dispatch])
+
   return (
     <RankingWrapper>
       <ThemeHeaderRCM title="榜单" />
       <div className="tops">
+        <TopRanking info={originRanking} />
         <TopRanking info={upRanking} />
         <TopRanking info={newRanking} />
-        <TopRanking info={originRanking} />
       </div>
     </RankingWrapper>
   )

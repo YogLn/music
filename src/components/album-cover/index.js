@@ -6,6 +6,7 @@ import { AlbumWrapper } from './style'
 
 export default memo(function AlbumCover(props) {
 	const { info, size = 130, width = 153, bgp = "-845px" } = props
+	
 	return (
 		<AlbumWrapper size={size} width={width} bgp={bgp}>
 			<div className="album-image">

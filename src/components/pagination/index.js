@@ -12,7 +12,7 @@ export default memo(function HYPagination(props) {
       return <button className="control prev"> &lt; 上一页</button>;
     }
     if (type === 'next') {
-      return <button className="control next">上一页 &gt;</button>;
+      return <button className="control next">下一页 &gt;</button>;
     }
     return originalElement;
   }
