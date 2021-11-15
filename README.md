@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# 网易云音乐项目
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 项目运行
 
-## Available Scripts
+克隆项目后，安装依赖
 
-In the project directory, you can run:
+```
+yarn
+```
 
-### `yarn start`
+运行项目
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+yarn start
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 项目简介
 
-### `yarn build`
+跟着coderwhy老师学习的react教程，后面做的网易云音乐项目，老师只讲了首页的搭建和音乐的播放，个人后面将其他的页面进行了晚上，真的学到了很多的东西，非常感谢coderwhy老师
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**技术栈： react  + hooks + redux + antd**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**所有的数据都采用了redux进行同意的管理，并且采用了immutable进了优化**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 推荐界面
 
-### `yarn eject`
+- 轮播图
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- 热门推荐
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- 新碟上架
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- 榜单
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+  ![image-20211115153239710](https://i.loli.net/2021/11/15/ZxliPrUGqs2SRe6.png)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![image-20211115153405194](https://i.loli.net/2021/11/15/vQ4kNxAbCrXfs2w.png)
 
-### Code Splitting
+## 播放功能
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- 歌曲播放功能，做到了对排行榜中的歌曲点击播放、对歌词面板中的歌曲点击播放
+- 做到了歌曲的暂停、播放、进度改变播放
+- 做了不同模式的播放：循环播放、单曲循环、随机播放
+- 做了歌词的解析和滚动
 
-### Analyzing the Bundle Size
+如果没有打开歌词面板，歌词将在下方进行展示
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![image-20211115153655629](https://i.loli.net/2021/11/15/zGoXHrdO4V1EumY.png)
 
-### Making a Progressive Web App
+如果打开了歌词面板，歌词将会在歌词面板展示
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![image-20211115153728058](https://i.loli.net/2021/11/15/e8YZjFUAmERvwnp.png)
 
-### Advanced Configuration
+歌词界面（评论功能没有做,后面有时间再说吧·····hhhh）
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![image-20211115153843205](https://i.loli.net/2021/11/15/76RsvwXx1mV2rgW.png)
 
-### Deployment
+## 排行榜
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- 点击不同的榜单进行显示
+- 点击不同的歌曲进行播放的功能
 
-### `yarn build` fails to minify
+![image-20211115154023123](https://i.loli.net/2021/11/15/ItRiOx7PZw3b5oN.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 歌单
+
+- 做了界面的展示
+- 之前的封装的`cover`组件起了很大的作用，少写了很多的代码
+
+![image-20211115154044991](https://i.loli.net/2021/11/15/qOKX5RuD3G2NxAf.png)
+
+## 主播电台
+
+- 做了界面的展示
+- 之前的封装的`cover`组件起了很大的作用，少写了很多的代码
+
+![image-20211115154154035](https://i.loli.net/2021/11/15/a7pNIcvLOCsHGKP.png)
+
+## 歌手
+
+- 做了界面的展示
+- 之前的封装的`cover`组件起了很大的作用，少写了很多的代码
+- 其中可以按照歌手的首字母进行排序展示
+
+![image-20211115154130785](https://i.loli.net/2021/11/15/iX7zRYAE9FWxl3g.png)
+
+## 新碟上架
+
+- 做了界面的展示
+- 之前的封装的`cover`组件起了很大的作用，少写了很多的代码
+- 分页显示
+
+![image-20211115154217576](https://i.loli.net/2021/11/15/Ls1MTb6xNAORcCX.png)
+
+
+
