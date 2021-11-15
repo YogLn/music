@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const AlbumWrapper = styled.div`
 	width: ${props => props.width + 'px'};
-
+	margin-top: 14px;
 	.album-image {
 		position: relative;
 		width: ${props => props.width + 'px'};

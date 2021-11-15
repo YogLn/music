@@ -8,7 +8,7 @@ export default memo(function Artist() {
   return (
     <ArtistWrapper className="wrap-v2">
       <ArtistCategory />
-      <ArtistList />
+      <ArtistList />      
     </ArtistWrapper>
   )
 })

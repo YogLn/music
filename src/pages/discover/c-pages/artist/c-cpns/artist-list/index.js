@@ -4,6 +4,7 @@ import { useSelector, shallowEqual } from 'react-redux'
 import { ArtistListWrapper } from './style'
 import ThemeHeader from '@/components/theme-header-normal'
 import AlphaList from './c-cpns/alpha-list'
+import ArtistItem from './c-cpns/artist-item'
 
 export default memo(function ArtistList() {
 	// react redux
@@ -15,7 +16,14 @@ export default memo(function ArtistList() {
 	return (
 		<ArtistListWrapper>
 			<ThemeHeader title={currentType.name} />
-			<AlphaList></AlphaList>
+			<AlphaList />
+			<div className="artist-list">
+				{
+					artistList.map((item, index) => {
+						return <ArtistItem key={item.id} index={index} info={item} />
+					})
+				}
+			</div>
 		</ArtistListWrapper>
 	)
 })

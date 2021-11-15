@@ -3,6 +3,12 @@ import request from './request';
 export function getArtistList(area, type, initial) {
   let url = "/artist/list";
   let params = { limit: 100 }
+  if(initial === '热门') {
+    initial = '-1'
+  } 
+  if(initial === '其他') {
+    initial = '0'
+  }
   if (area === -1 && type === 1) {
     url = "/top/artists"
   } else {
@@ -18,7 +24,7 @@ export function getArtistList(area, type, initial) {
     }
   }
 
-  console.log("url:", url, "params:", params);
+  // console.log("url:", url, "params:", params);
 
   return request({
     url,
